@@ -17,9 +17,7 @@ public class ProtoTypeTest {
         AnnotationConfigApplicationContext ac = new
                 AnnotationConfigApplicationContext(ClientBean.class, PrototypeBean.class);
         ClientBean clientBean1 = ac.getBean(ClientBean.class);
-        System.out.println("2222");
         int count1 = clientBean1.logic();
-        System.out.println("333333");
         assertThat(count1).isEqualTo(1);
         ClientBean clientBean2 = ac.getBean(ClientBean.class);
         int count2 = clientBean2.logic();
@@ -29,9 +27,7 @@ public class ProtoTypeTest {
         @Autowired
         private ObjectProvider<PrototypeBean> prototypeBeanProvider;
         public int logic() {
-            System.out.println("000000");
             PrototypeBean prototypeBean = prototypeBeanProvider.getObject();
-            System.out.println("111111");
             prototypeBean.addCount();
             int count = prototypeBean.getCount();
             return count;
