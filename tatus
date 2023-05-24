@@ -1,0 +1,21 @@
+[33m2a46f83[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: commit: request scope
+[33m5b8f616[m HEAD@{1}: commit: 리퀘스트 스코프와 provider
+[33ma9708a1[m HEAD@{2}: commit (amend): 프로토타입 생명주기 테스트
+[33m150a92b[m HEAD@{3}: commit: 프로토타입 테생명주기 테스트
+[33mcebb535[m HEAD@{4}: commit: 빈 생명주기 콜백
+[33m3072fbd[m HEAD@{5}: commit: 싱글톤 패턴 설계해보기
+[33mc4320d0[m HEAD@{6}: commit: 빈 조회 테스트코트
+[33m27ac9bd[m HEAD@{7}: commit: 스프링 빈 ì ë 등록된 빈 출력해보기
+[33md7f2cfa[m HEAD@{8}: commit: 주문 구현체, 테스트 추가
+[33ma0df331[m HEAD@{9}: commit: 주문 order 단위 테스트
+[33m19d6281[m HEAD@{10}: commit: 주문 도메인 개발
+[33m7ff70d7[m HEAD@{11}: commit: 회원 join 단위 테스트
+[33ma8423f3[m HEAD@{12}: commit: 회원 도메인 개발
+[33m77e32fd[m HEAD@{13}: commit: AOP
+[33m5f656e3[m HEAD@{14}: commit: JPA
+[33mc1c0fe9[m HEAD@{15}: commit: 1. 멤버 mvc 메모리에 저장하는 방식으로 구현
+[33m8b07be5[m HEAD@{16}: commit: 멤버서비스, 멤버리파지토리 빈등록 생성자주입
+[33m7935244[m HEAD@{17}: commit: 리파지토리, 서비스 테스트 코드
+[33ma58dd07[m HEAD@{18}: commit: 포트 8080 -> 80으로 변경
+[33m4502fc0[m HEAD@{19}: pull: Fast-forward
+[33m917a618[m HEAD@{20}: commit (initial): initial commit
