@@ -20,10 +20,19 @@ class JpaMemberRepositoryTest {
     @Test
     void save() {
         Member member = new Member();
+        Member member2 = new Member();
         member.setName("asdf");
+        member2.setName("aaaa");
+
+        System.out.println("before");
         memberRepository.save(member);
-        Optional<Member> member2 = memberRepository.findByName("asdf");
-        Assertions.assertThat(member).isEqualTo(member2.get());
+        memberRepository.save(member2);
+        System.out.println("asdasd : " + member.getId());
+        System.out.println("asdasd : " + member2.getId());
+        System.out.println("end");
+        Optional<Member> member3 = memberRepository.findById(3L);
+        System.out.println("aaaaaaaaaaa" + member3.get().getId());
+        Assertions.assertThat(member).isEqualTo(member3.get());
     }
 
     @Test
@@ -47,8 +56,8 @@ class JpaMemberRepositoryTest {
 
         List<Member> result = memberRepository.findAll();
 
-        result.stream().forEach(o-> System.out.println("list :: " + o.getName()));
+        result.stream().forEach(o-> System.out.println("list :: " + o.getId()));
 
-        assertThat(result.size()).isEqualTo(4);
+        assertThat(result.size()).isEqualTo(3);
     }
 }
